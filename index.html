@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App de Encriptación</title>
+    <!-- Incluye el CDN de Bulma -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <!-- Incluye Font Awesome para los iconos de sol y luna -->
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+
+<body class="dark-mode">
+    <!-- Botón para cambiar el modo -->
+    <div id="themeToggle" class="switch is-pulled-right">
+        <i class="fas fa-sun sun icon"></i>
+        <i class="fas fa-moon moon icon"></i>
+        <div class="slider"></div>
+    </div>
+
+    <section class="section">
+        <div class="container">
+            <h1 class="title has-text-centered">App de Encriptación</h1>
+
+            <!-- Mensaje -->
+            <div class="field">
+                <label class="label">Mensaje</label>
+                <div class="control">
+                    <textarea id="message" class="textarea" placeholder="Escribe el mensaje"></textarea>
+                </div>
+            </div>
+
+            <!-- Clave -->
+            <div class="field">
+                <label class="label">Clave</label>
+                <div class="control">
+                    <input id="key" class="input" type="password" placeholder="Ingresa la clave">
+                </div>
+            </div>
+
+            <!-- Botón de Encriptar/Desencriptar -->
+            <div class="field has-text-centered">
+                <button id="toggleBtn" class="button is-primary is-large">ENCRIPTAR</button>
+            </div>
+            <!-- Resultado -->
+            <div class="field">
+                <label class="label"></label>
+                <div id="result" class="notification is-light has-text-weight-bold"></div>
+            </div>
+        </div>
+        
+    </section>
+
+    <script src="/assets/js/app.js"></script>
+    <script src="/assets/js/modo-dark-light.js"></script>
+</body>
+
+</html>
